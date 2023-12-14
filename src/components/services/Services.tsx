@@ -78,7 +78,7 @@ const Services = () => {
 				</ul>
 			</div>
 			<div className="w-1/2 md:w-full sticky top-0 h-screen flex items-center">
-				<div className="relative w-full aspect-square rounded-2xl transition-all duration-500 border border-zinc-800/40 group h-1/4">
+				<div className="relative  w-full aspect-square rounded-2xl transition-all duration-500 border border-zinc-800/40 group h-[275px]">
 					{services.map((service) => (
 						<service.card
 							id={service.id}
