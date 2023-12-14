@@ -1,63 +1,87 @@
 "use client"
 
-import { MouseEventHandler, useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 import portfolio from "@/lib/lists/portfolio"
-import { motion } from "framer-motion"
+import { motion, useTransform, useScroll } from "framer-motion"
+import { ArrowUpRight, ExternalLink } from "lucide-react"
+import Image from "next/image"
 
 const Portfolio = () => {
-	const [width, setWidth] = useState(0)
+	const ref = useRef<HTMLDivElement | null>(null)
 
-	const carousel = useRef<any>()
+	const { scrollYProgress } = useScroll({
+		target: ref,
+	})
 
-	useEffect(() => {
-		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
-	}, [])
+	const x = useTransform(scrollYProgress, [0, 1], ["0%", "-150%"])
 
 	return (
-		<div className="flex flex-col gap-16 max-w-7xl mx-auto w-full">
-			<div className="flex flex-col gap-2">
-				<h1
-					className="text-3xl font-bold tracking-widest text-white drop-shadow-lg"
+		<div className="w-full inline-flex flex-nowrap max-w-7xl mx-auto">
+			<div className=" flex flex-col gap-16 h-[40vh] w-full">
+				<motion.h1
+					initial={{ y: -100, opacity: 0 }}
+					whileInView={{ y: 0, opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{ duration: 1 }}
+					className="text-xl md:text-3xl font-bold tracking-widest text-white text-center uppercase"
 					style={{ textShadow: "2px 2px #e11d48" }}
 				>
-					Our portfolio
-				</h1>
-				<p className="text-gray-200/80 font-semibold text-sm">
-					Some of the projects we were able to raise funds for.
-				</p>
-			</div>
+					We've got a pretty impressive portfolio...
+				</motion.h1>
 
-			<motion.div ref={carousel} className="cursor-grab overflow-hidden">
 				<motion.div
-					drag="x"
-					dragConstraints={{ right: 0, left: -width }}
-					className="flex gap-8"
+					initial={{ x: 150, opacity: 0 }}
+					whileInView={{ x: 0, opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{ duration: 1.5 }}
+					className="relative tracking-widest w-full bg-[#020202] border border-gray-800/40 rounded-md inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_40px,_black_calc(100%-200px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-500px),transparent_100%)]"
 				>
-					{portfolio.map((project, index) => (
-						<motion.div
-							className="bg-[#080A22] overflow-hidden w-96 h-96 relative rounded-md border border-gray-400/10 p-8 drop-shadow-[0px_0px_15px_rgba(225,29,72,0.05)] hover:drop-shadow-[0px_0px_15px_rgba(225,29,72,0.1)] transition min-w-[20rem]"
-							key={project.id}
-						>
-							<div className="flex flex-col gap-4">
-								<h1 className="text-primary text-lg font-bold">
-									{project.name}
-								</h1>
-								<p className="text-sm text-gray-100/90 w-3/4 font-semibold ">
-									{project.description}
-								</p>
-							</div>
-							<div className="w-24 h-24 rounded-full border-2 border-primary/30 flex items-center justify-center absolute -right-4 -bottom-4 ">
+					<div className="py-12 animate-infinite-scroll flex gap-20 pr-8 items-center">
+						{portfolio.map((project, idx) => (
+							<div
+								className="flex flex-col items-center w-max space-y-4"
+								key={project.id}
+							>
 								<img
 									src={project.logo}
 									alt={project.name}
-									className="h-10 w-10 rounded-full object-cover grayscale drop-shadow-[0px_0px_25px_rgba(225,29,72,0.8)]"
+									className="h-8 2xl:h-20 w-8 2xl:w-20 rounded-full object-cover"
 								/>
+
+								<h1
+									className="text-sm font-bold w-max uppercase"
+									style={{ textShadow: "2px 2px #e11d48" }}
+								>
+									{project.name}
+								</h1>
 							</div>
-						</motion.div>
-					))}
+						))}
+					</div>
+
+					<div className="absolute top-0 py-12 animate-infinite-scroll-2 flex gap-20 pl-12 items-center">
+						{portfolio.map((project, idx) => (
+							<div
+								className="flex flex-col items-center space-y-4 w-max"
+								key={project.id}
+							>
+								<img
+									src={project.logo}
+									alt={project.name}
+									className="h-8 2xl:h-20 w-8 2xl:w-20 rounded-full object-cover"
+								/>
+
+								<h1
+									className="text-sm font-bold w-max uppercase"
+									style={{ textShadow: "2px 2px #e11d48" }}
+								>
+									{project.name}
+								</h1>
+							</div>
+						))}
+					</div>
 				</motion.div>
-			</motion.div>
+			</div>
 		</div>
 	)
 }
