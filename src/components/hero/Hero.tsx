@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const Hero = () => {
 	return (
@@ -42,15 +43,20 @@ const Hero = () => {
 						className="flex flex-col md:flex-row gap-4"
 					>
 						<Button className="py-6 text-sm flex items-center w-full text-md font-semibold">
-							What do we offer?
+							<Link href="#services">What do we offer?</Link>
 						</Button>
 
 						<Button
-							className="py-6 text-sm flex items-center w-full text-md hover:bg-primary hover:text-white font-semibold duration-500"
+							className="py-6 text-sm w-full text-md hover:bg-primary hover:text-white font-semibold duration-500"
 							variant="ghost"
 						>
-							Pitch your project
-							<ArrowRight className="h-4 w-4 ml-2" />
+							<Link
+								href="#contact"
+								className=" flex items-center"
+							>
+								Pitch your project
+								<ArrowRight className="h-4 w-4 ml-2" />
+							</Link>
 						</Button>
 					</motion.div>
 				</div>

@@ -27,7 +27,7 @@ const Portfolio = () => {
 					className="text-xl md:text-3xl font-bold tracking-widest text-white text-center uppercase"
 					style={{ textShadow: "2px 2px #e11d48" }}
 				>
-					We've got a pretty impressive portfolio...
+					We&apos;ve got a pretty impressive portfolio...
 				</motion.h1>
 
 				<motion.div
