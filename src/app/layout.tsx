@@ -11,7 +11,8 @@ const satoshi = localFont({ src: "../../fonts/satoshi-regular.otf" })
 
 export const metadata: Metadata = {
 	title: "Bully Ventures",
-	description: "...",
+	description:
+		"Bully Ventures will unleash your financial potential with premier early-stage project opportunities and expert trading insights.",
 }
 
 export default function RootLayout({
