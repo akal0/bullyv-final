@@ -29,7 +29,7 @@ const ServiceCard = ({ children, id }: ServiceCardProps) => {
 	return (
 		<div
 			className={cn(
-				"absolute inset-0 bg-gradient-to-br rounded-2xl w-full h-full group transition-all duration-500 p-6 xl:p-8 2xl:p-12 bg-[#020202] overflow-hidden cursor-default",
+				"absolute inset-0 bg-gradient-to-br rounded-2xl w-full h-[275px] md:h-full group transition-all duration-500 p-6 xl:p-8 2xl:p-12 bg-[#020202] overflow-hidden cursor-default",
 				inViewFeature === id ? "opacity-100" : "opacity-0"
 			)}
 		>
@@ -57,7 +57,7 @@ const ServiceItem = ({
 				<div className="bg-[#050505] border border-gray-800/40 w-max p-2 rounded-full">
 					<Icon className="h-3 2xl:h-5 w-3 2xl:w-5 text-primary" />
 				</div>
-				<p className="text-xs md:text-md 2xl:text-lg font-semibold md:pb-4 line-clamp-6">
+				<p className="text-xs md:text-md 2xl:text-lg font-semibold md:pb-4">
 					{description}
 				</p>
 			</div>
