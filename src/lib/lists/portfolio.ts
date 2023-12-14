@@ -14,26 +14,38 @@ const portfolio: PortfolioType[] = [
 	},
 	{
 		id: 2,
+		name: "Privasea",
+		description: "World's First Web3 Antivirus & SuperApp.",
+		logo: "portfolio/privasea/privasea.jpg",
+	},
+	{
+		id: 3,
+		name: "Metacard",
+		description: "World's First Web3 Antivirus & SuperApp.",
+		logo: "portfolio/metacard/metacard.jpg",
+	},
+	{
+		id: 4,
 		name: "EYWA",
 		description: "Cross-chain liquidity & data protocol.",
 		logo: "portfolio/eywa/eywa.jpg",
 	},
 	{
-		id: 3,
+		id: 5,
 		name: "Aether Games",
 		logo: "portfolio/aether/aether.jpg",
 		description:
 			"Aether Games, a groundbreaking transmedia development studio that has been turning heads in both web2 and web3 gaming spaces.",
 	},
 	{
-		id: 4,
+		id: 6,
 		name: "Myria",
 		description:
 			"Myria is a blockchain gaming ecosystem powered by Myria's Ethereum L2 scaling solution.",
 		logo: "portfolio/myria/myria.png",
 	},
 	{
-		id: 5,
+		id: 7,
 		name: "ChappyGPT",
 		description:
 			"Chappy is the friendly AI in charge of overseeing your community and rewarding genuine interactions.",
@@ -47,14 +59,14 @@ const portfolio: PortfolioType[] = [
 		logo: "portfolio/parallel/parallel.jpg",
 	},
 	{
-		id: 6,
+		id: 9,
 		name: "Virtual Versions",
 		description:
 			"Building a new era of social media - designed to restore ownership and privacy to individuals by empowering them with an AI-powered digital twin.",
 		logo: "portfolio/virtual_versions/virtualversions.jpg",
 	},
 	{
-		id: 7,
+		id: 10,
 		name: "HyperGPT",
 		logo: "portfolio/hypergpt/hypergpt.png",
 		description:
