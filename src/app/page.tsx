@@ -11,6 +11,7 @@ import Partners from "@/components/partners/Partners"
 import Contact from "@/components/contact/Contact"
 import Marquee from "@/components/Marquee"
 import Diagram from "@/components/diagram/Diagram"
+import Footer from "@/components/footer/Footer"
 
 export default function Home() {
 	// useEffect(() => {
@@ -31,11 +32,14 @@ export default function Home() {
 			<div className="absolute bottom-0 left-0 right-0 -top-[20%] bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:110px_110px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
 			<div className="flex flex-col w-full px-8 py-16 md:p-0">
-				<div className="flex flex-col 2xl:h-[calc(100vh-20rem)] md:mt-20 md:-mb-24 w-full">
+				<div
+					className="flex flex-col 2xl:h-[calc(100vh-20rem)] md:mt-20 md:-mb-24 w-full"
+					id="hero"
+				>
 					<Hero />
 				</div>
 
-				<div className="relative h-full">
+				<div className="relative h-full" id="services">
 					<Services />
 				</div>
 
@@ -43,7 +47,10 @@ export default function Home() {
 					<Marquee />
 				</div>
 
-				<div className="flex flex-col w-full mt-8 md:mt-28 max-w-5xl mx-auto 2xl:max-w-7xl">
+				<div
+					className="flex flex-col w-full mt-8 md:mt-28 max-w-5xl mx-auto 2xl:max-w-7xl"
+					id="partners"
+				>
 					<Partners />
 				</div>
 
@@ -51,12 +58,19 @@ export default function Home() {
 					<Diagram />
 				</div>
 
-				<div className="flex flex-col w-full h-[calc(50vh)]">
+				<div
+					className="flex flex-col w-full h-[calc(50vh)]"
+					id="portfolio"
+				>
 					<Portfolio />
 				</div>
 
-				<div className="w-full">
+				<div className="pb-20 w-full" id="contact">
 					<Contact />
+				</div>
+
+				<div>
+					<Footer />
 				</div>
 			</div>
 		</div>

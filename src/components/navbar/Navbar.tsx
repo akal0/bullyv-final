@@ -2,7 +2,7 @@
 
 import localFont from "next/font/local"
 import { cn } from "@/lib/utils"
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, TrendingUp } from "lucide-react"
 import Link from "next/link"
 import { Button } from "../ui/button"
 
@@ -26,30 +26,26 @@ const Navbar = () => {
 				</h1>
 
 				<div className="hidden md:flex items-center text-sm gap-x-8 ">
-					<Link href="#" className="nav-item">
+					<Link href="#hero" className="nav-item">
 						Home
 					</Link>
 
-					<Link href="#" className="nav-item">
+					<Link href="#services" className="nav-item">
 						Services
 					</Link>
 
-					<Link href="#" className="nav-item">
+					<Link href="#partners" className="nav-item">
 						Partners
 					</Link>
 
-					<Link href="#" className="nav-item">
+					<Link href="#portfolio" className="nav-item">
 						Portfolio
 					</Link>
 
-					<Link href="#" className="nav-item">
-						Investment
-					</Link>
-
-					<Link href="#">
+					<Link href="#contact">
 						<Button className="tracking-wider text-sm flex items-center justify-center">
-							Get in contact
-							<ArrowUpRight className="w-4 h-4 ml-1" />
+							Contact
+							<TrendingUp className="w-4 h-4 ml-1" />
 						</Button>
 					</Link>
 				</div>

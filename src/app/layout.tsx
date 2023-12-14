@@ -1,12 +1,11 @@
 import type { Metadata } from "next"
-
 import { Raleway } from "next/font/google"
-
-import { cn } from "@/lib/utils"
-import "./globals.css"
 import localFont from "next/font/local"
+import { Toaster } from "sonner"
 
-const raleway = Raleway({ subsets: ["latin"] })
+import "./globals.css"
+import { cn } from "@/lib/utils"
+import Providers from "@/components/providers/Providers"
 
 const satoshi = localFont({ src: "../../fonts/satoshi-regular.otf" })
 
@@ -28,7 +27,13 @@ export default function RootLayout({
 					satoshi.className
 				)}
 			>
-				{children}
+				<Providers>
+					<main>
+						{children}
+
+						<Toaster />
+					</main>
+				</Providers>
 			</body>
 		</html>
 	)

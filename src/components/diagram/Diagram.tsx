@@ -22,9 +22,9 @@ const Diagram = () => {
 							id="gradient"
 							gradientTransform="rotate(0)"
 						>
-							<stop offset="25%" stop-color="black" />
-							<stop offset="60%" stop-color="white" />
-							<stop offset="75%" stop-color="black" />
+							<stop offset="25%" stopColor="black" />
+							<stop offset="60%" stopColor="white" />
+							<stop offset="75%" stopColor="black" />
 						</linearGradient>
 						<mask id="gradientMask">
 							<rect
@@ -78,21 +78,21 @@ const Diagram = () => {
 					<path
 						d="M 0,0 C 300,4 200,78 400,78"
 						stroke="#1f2937"
-						stroke-width="6"
+						strokeWidth="6"
 						fill="none"
 					/>
 
 					<path
 						d="M 0,0 C 300,4 200,78 400,78"
 						stroke="#020202"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 					/>
 
 					<path
 						d="M 0, 0 C 300,4 200,78 400,78"
 						stroke="#fff"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 						mask="url('#gradientMask')"
 					/>
@@ -110,21 +110,21 @@ const Diagram = () => {
 					<path
 						d="M 0,0 C 300,4 200,78 400,78"
 						stroke="#1f2937"
-						stroke-width="6"
+						strokeWidth="6"
 						fill="none"
 					/>
 
 					<path
 						d="M 0,0 C 300,4 200,78 400,78"
 						stroke="#020202"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 					/>
 
 					<path
 						d="M 0, 0 C 300,4 200,78 400,78"
 						stroke="#fff"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 						mask="url('#gradientMask')"
 					/>
@@ -144,21 +144,21 @@ const Diagram = () => {
 					<path
 						d="M0,100 C200,85 200,98 400,98"
 						stroke="#1f2937"
-						stroke-width="6"
+						strokeWidth="6"
 						fill="none"
 					/>
 
 					<path
 						d="M0, 100 C200,85 200,98 400,98"
 						stroke="#020202"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 					/>
 
 					<path
 						d="M0,100 C200,85 200,98 400,98"
 						stroke="#fff"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 						mask="url('#gradientMask')"
 					/>
@@ -176,21 +176,21 @@ const Diagram = () => {
 					<path
 						d="M0,100 C200,85 200,98 400,98"
 						stroke="#1f2937"
-						stroke-width="6"
+						strokeWidth="6"
 						fill="none"
 					/>
 
 					<path
 						d="M0, 100 C200,85 200,98 400,98"
 						stroke="#020202"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 					/>
 
 					<path
 						d="M0,100 C200,85 200,98 400,98"
 						stroke="#fff"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 						mask="url('#gradientMask')"
 					/>
@@ -210,21 +210,21 @@ const Diagram = () => {
 					<path
 						d="M 0, 200 C 200, 200 200, 118 400, 118"
 						stroke="#1f2937"
-						stroke-width="6"
+						strokeWidth="6"
 						fill="none"
 					/>
 
 					<path
 						d="M0, 200 C 200,200 200,118 400,118"
 						stroke="#020202"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 					/>
 
 					<path
 						d="M0,200 C 200, 200 200,118 400,118"
 						stroke="#fff"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 						mask="url('#gradientMask')"
 					/>
@@ -242,21 +242,21 @@ const Diagram = () => {
 					<path
 						d="M 0, 200 C 200, 200 200, 118 400, 118"
 						stroke="#1f2937"
-						stroke-width="6"
+						strokeWidth="6"
 						fill="none"
 					/>
 
 					<path
 						d="M0, 200 C 200,200 200,118 400,118"
 						stroke="#020202"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 					/>
 
 					<path
 						d="M0,200 C 200, 200 200,118 400,118"
 						stroke="#fff"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 						mask="url('#gradientMask')"
 					/>
@@ -276,21 +276,21 @@ const Diagram = () => {
 					<path
 						d="M0,100 C200,85 200,98 400,98"
 						stroke="#1f2937"
-						stroke-width="6"
+						strokeWidth="6"
 						fill="none"
 					/>
 
 					<path
 						d="M0, 100 C200,85 200,98 400,98"
 						stroke="#020202"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 					/>
 
 					<path
 						d="M0,100 C200,85 200,98 400,98"
 						stroke="#e11d48"
-						stroke-width="4"
+						strokeWidth="4"
 						fill="none"
 						mask="url('#endGradientMask')"
 					/>

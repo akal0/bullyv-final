@@ -23,6 +23,8 @@ const Partners = () => {
 			"600ms cubic-bezier(0.22, 0.61, 0.36, 1)"
 		)
 
+		// @ts-ignore
+
 		timeoutRef.current = setTimeout(() => {
 			wrapperRef.current?.style.removeProperty("--transition")
 		}, 900)
