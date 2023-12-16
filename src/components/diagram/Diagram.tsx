@@ -358,7 +358,7 @@ const Diagram = () => {
 					className="absolute -right-[15%] bg-[#020202] font-semibold border border-gray-800/40 text-sm h-[48px] flex justify-center items-center rounded-[8px] drop-shadow-lg top-[52%] w-[200px]"
 				>
 					<p className="text-primary animate-pulse">
-						Successfull investments
+						Successful investments
 					</p>
 				</motion.div>
 			</div>
