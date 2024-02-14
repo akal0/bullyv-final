@@ -53,17 +53,17 @@ const portfolio: PortfolioType[] = [
 	},
 	{
 		id: 8,
-		name: "Parallel Chain",
+		name: "Ordify",
 		description:
-			"Parallel Chain is a dual-blockchain ecosystem of applications and smart contracts powered by two layer-1 distributed ledgers: ParallelChain Mainnet and Parallel Chain Private. Founded with the purpose to create a utility-driven, networked and trusted ecosystem for web2 and web3 users.",
-		logo: "portfolio/parallel/parallel.jpg",
+			"Ordify is a protocol built for multiple layers and chains. Serving the BRC20, STACKS, RSK, All EVM Chains, and solana, ordify becomes the first the to cater for multiple ecosystems.",
+		logo: "portfolio/ordify/ordify.jpg",
 	},
 	{
 		id: 9,
-		name: "Virtual Versions",
+		name: "Nibiru",
 		description:
-			"Building a new era of social media - designed to restore ownership and privacy to individuals by empowering them with an AI-powered digital twin.",
-		logo: "portfolio/virtual_versions/virtualversions.jpg",
+			"Nibiru Chain is an emerging Layer 1 blockchain, designed to empower both Web2 and Web3 developers. Nibiru offers a robust platform for building innovative applications and services, bridging the gap into blockchain development.",
+		logo: "portfolio/nibiru/nibiru.jpg",
 	},
 	{
 		id: 10,
