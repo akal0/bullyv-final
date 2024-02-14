@@ -63,7 +63,7 @@ const portfolio: PortfolioType[] = [
 		name: "Nibiru",
 		description:
 			"Nibiru Chain is an emerging Layer 1 blockchain, designed to empower both Web2 and Web3 developers. Nibiru offers a robust platform for building innovative applications and services, bridging the gap into blockchain development.",
-		logo: "portfolio/nibiru/nibiru.jpg",
+		logo: "portfolio/nibiru/nibiru.jpeg",
 	},
 	{
 		id: 10,
