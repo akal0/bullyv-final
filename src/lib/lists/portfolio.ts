@@ -8,48 +8,48 @@ interface PortfolioType {
 const portfolio: PortfolioType[] = [
 	{
 		id: 1,
+		name: "Exabits",
+		logo: "portfolio/exabits/exabits.jpg",
+		description:
+			"Exabits' network of GPUs ranges from consumer-grade to H100s, offering the most cost-effective compute because we are obsessed with innovating performance.",
+	},
+	{
+		id: 2,
 		name: "Defiyield",
 		description: "World's First Web3 Antivirus & SuperApp.",
 		logo: "portfolio/defiyield/defiyield.jpg",
 	},
 	{
-		id: 2,
+		id: 3,
 		name: "Privasea",
 		description: "World's First Web3 Antivirus & SuperApp.",
 		logo: "portfolio/privasea/privasea.jpg",
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Metacard",
 		description: "World's First Web3 Antivirus & SuperApp.",
 		logo: "portfolio/metacard/metacard.jpg",
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "EYWA",
 		description: "Cross-chain liquidity & data protocol.",
 		logo: "portfolio/eywa/eywa.jpg",
 	},
 	{
-		id: 5,
+		id: 6,
 		name: "Aether Games",
 		logo: "portfolio/aether/aether.jpg",
 		description:
 			"Aether Games, a groundbreaking transmedia development studio that has been turning heads in both web2 and web3 gaming spaces.",
 	},
 	{
-		id: 6,
+		id: 7,
 		name: "Myria",
 		description:
 			"Myria is a blockchain gaming ecosystem powered by Myria's Ethereum L2 scaling solution.",
 		logo: "portfolio/myria/myria.png",
-	},
-	{
-		id: 7,
-		name: "ChappyGPT",
-		description:
-			"Chappy is the friendly AI in charge of overseeing your community and rewarding genuine interactions.",
-		logo: "portfolio/chappygpt/chappygpt.jpg",
 	},
 	{
 		id: 8,
@@ -71,6 +71,13 @@ const portfolio: PortfolioType[] = [
 		logo: "portfolio/hypergpt/hypergpt.png",
 		description:
 			"HyperGPT platform is designed to provide a marketplace where AI applications can be bought, sold, and exchanged in a secure and transparent manner, powered by blockchain technology.",
+	},
+	{
+		id: 12,
+		name: "Minterest",
+		logo: "portfolio/minterest/minterest.jpg",
+		description:
+			"Minterest captures more fees than any other lending protocol and redistributes them as rewards back to users who contribute to its governance with the highest long term yields.",
 	},
 ]
 
