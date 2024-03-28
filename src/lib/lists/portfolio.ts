@@ -27,9 +27,10 @@ const portfolio: PortfolioType[] = [
 	},
 	{
 		id: 4,
-		name: "Metacard",
-		description: "World's First Web3 Antivirus & SuperApp.",
-		logo: "portfolio/metacard/metacard.jpg",
+		name: "Elixir",
+		description:
+			"Elixir Games isn’t just a launcher—it’s your gateway to endless adventures.",
+		logo: "portfolio/elixir/elixir.jpg",
 	},
 	{
 		id: 5,
