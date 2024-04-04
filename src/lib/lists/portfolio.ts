@@ -21,6 +21,12 @@ const portfolio: PortfolioType[] = [
 	},
 	{
 		id: 3,
+		name: "Gunzilla",
+		description: "World's First Web3 Antivirus & SuperApp.",
+		logo: "portfolio/gunzilla/gunzilla.jpg",
+	},
+	{
+		id: 3,
 		name: "Privasea",
 		description: "World's First Web3 Antivirus & SuperApp.",
 		logo: "portfolio/privasea/privasea.jpg",
